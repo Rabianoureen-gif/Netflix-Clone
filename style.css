@@ -1,0 +1,430 @@
+:root {
+
+    --font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.main {
+
+    background-image: url(assets/images/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1280px 100vw);
+    height: 90vh;
+    position: relative;
+}
+
+.main .box {
+    position: absolute;
+    top: 0;
+    background-color: black;
+    opacity: 0.6;
+    height: 90vh;
+    width: 100%;
+}
+
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+button {
+    background-color: #eb0c0c;
+    color: white;
+    padding: 15px 24px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d40d0d;
+}
+
+nav img {
+    position: relative;
+    z-index: 10;
+}
+
+.main nav {
+    display: flex;
+
+    justify-content: space-around;
+    margin: auto;
+    max-width: 80vw;
+    height: 80px;
+    align-items: center;
+
+}
+
+.text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: var(--font-family);
+    height: 100%;
+}
+
+.text> :first-child {
+    font-weight: 900;
+    font-size: 58px;
+    max-width: 650px;
+    /* text ko 2 sundar lines mein tod dega */
+    text-align: center;
+    line-height: 1.15;
+
+}
+
+.text> :nth-child(2) {
+    font-size: 19px;
+    margin: 39px;
+}
+
+
+.main input {
+    background-color: #181717a3;
+    color: white;
+    padding: 20px 107px;
+    margin: 50px 9px;
+    border: 2px solid #ffffff63;
+    font-size: large;
+    border-radius: 4px;
+
+}
+
+.main input:hover {
+    cursor: pointer;
+}
+
+.btn {
+
+    padding: 19px 37px;
+    font-size: large;
+    border-radius: 4px;
+}
+
+.first {
+
+    height: auto;
+    width: 60vw;
+    margin: 60px auto 30px auto;
+    color: white;
+}
+
+.card-containers {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    max-width: 60vw;
+    gap: 16px;
+}
+
+.card {
+
+    background: linear-gradient(149deg, #192247 0%, #210e17 99%);
+    height: 310px;
+    border-radius: 20px;
+    color: white;
+    /* margin-top: 74px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: var(--font-family);
+}
+
+h3 {
+    color: white;
+    font-size: 24px;
+    font-family: var(--font-family);
+    margin: 35px;
+}
+
+.first h3,
+.first h2 {
+    margin-bottom: 20px;
+}
+
+.card p {
+    color: #ffffffb0;
+    font-family: var(--font-family);
+    margin: 29px;
+
+}
+
+#card2 {
+    margin: 0;
+    padding: 10px;
+}
+
+.card img {
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+    margin-bottom: 14px;
+    align-self: flex-end;
+    object-fit: contain;
+}
+
+.faq h2 {
+    text-align: left;
+    width: 60%;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 25px;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    gap: 8px;
+}
+
+.faqbox {
+    color: white;
+    background-color: #80808054;
+    width: 60%;
+    font-family: var(--font-family);
+    padding: 20px;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.4s ease-out;
+    cursor: pointer;
+}
+
+.faqbox:hover {
+    background-color: #444242db;
+}
+
+.section-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    margin: 60px 10px;
+}
+
+.section-input input {
+    background-color: #181717a3;
+    color: white;
+    padding: 20px 107px;
+    /* margin: 50px auto; */
+    border: 2px solid #ffffff63;
+    font-size: large;
+    border-radius: 4px;
+
+
+}
+
+.section-input input:hover {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 60vw;
+    margin: 30px auto;
+}
+
+.footer a {
+    font-family: var(--font-family);
+    padding: 10px;
+    color: #ffffffcf;
+    margin: 12px;
+}
+
+.footer-items {
+    color: #ffffffcf;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-country {
+    color: #ffffffcf;
+    font-family: var(--font-family);
+    font-size: 20px;
+    margin: 35px 100px;
+    max-width: 60vw;
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .main nav {
+        height: 70px;
+        max-width: 90vw;
+    }
+
+    .main img {
+        width: 100px;
+    }
+
+    nav button {
+        padding: 6px 14px;
+        font-size: 14px;
+    }
+
+    .text> :first-child {
+        font-size: 28px !important;
+        max-width: 90% !important;
+        line-height: 1.2 !important;
+        text-align: center;
+    }
+
+    .text> :nth-child(2) {
+        font-size: 18px !important;
+        margin: 10px 0 !important;
+        text-align: center;
+    }
+
+    .text> :nth-child(3) {
+        font-size: 16px;
+        /* top right bottom left  */
+        margin: 6px 0 14px 0 !important;
+        text-align: center;
+        max-width: 90%;
+
+    }
+
+    .main input {
+        padding: 12px 16px;
+        /* desktop ka 107px padding khatam */
+        margin: 15px 0 10px 0;
+        margin: 12px 12px;
+        width: 90%;
+        max-width: 320px;
+        font-size: 14px;
+
+    }
+
+    .btn {
+        width: 90%;
+        max-width: 320px;
+        padding: 12px;
+        font-size: 16px;
+
+    }
+
+    /* 3. "More Reasons to Join" ke 4 cards ko 1 column karein */
+    .first {
+        width: 90vw;
+        height: auto;
+        margin: 40px auto;
+        
+    }
+    .first h2{
+        font-size: 24px;
+        width: 90%;
+        text-align: left;
+        margin: 62px;
+
+    }
+
+    .card-containers {
+        grid-template-columns: 1fr;
+        /* 4 dabbe ek ke neeche ek aayenge */
+        gap: 16px;
+    }
+
+    .card {
+        height: auto;
+        min-height: 180px;
+        padding: 20px;
+    }
+   
+    .faq h2 {
+        font-size: 20px;
+        width: 90%;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+
+    /* 2. Pure FAQ section aur boxes ko screen ke mutabiq khula karein */
+    .faq {
+        width: 100%;
+    }
+
+    .faqbox {
+        width: 90% !important; /* 60% se badha kar 90% taake boxes khul jayein */
+        font-size: 16px !important;
+        padding: 16px !important;
+    }
+       /* Email Input aur Button ka container (FAQ ke neeche wala) */
+    .section-input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        margin: 24px auto;
+    }
+
+    /* Asal Input Field */
+    .section-input input {
+       
+        font-size: 16px;
+        padding: 14px 16px; /* 107px ki jagah proper mobile padding */
+        width: 90%;
+        max-width: 360px;
+    }
+
+    /* Get Started Button */
+    .section-input .btn {
+        width: 90%;
+        max-width: 360px;
+        padding: 12px;
+        font-size: 16px;
+    }
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 90vw;
+        gap: 16px;
+    }
+    .footer-country {
+        max-width: 90vw;
+        text-align: left;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Tablet par sirf cards aur footer 2x2 grid honge, baki sab desktop jaisa */
+    .card-containers {
+        grid-template-columns: 1fr 1fr;
+        max-width: 90vw;
+    }
+    .first, .faq, .footer, .footer-country {
+        width: 90vw;
+        max-width: 90vw;
+    }
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
